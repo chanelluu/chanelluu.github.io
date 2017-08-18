@@ -1,0 +1,168 @@
+html, body, .wrapper {
+	height: 100%;
+	margin: 0;
+}
+
+body {
+	background-color: black;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.img-container {
+	height: 729px;
+    width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+
+.background-img {
+	position: absolute;
+	top: -900px;
+	left: -1400px;
+}
+
+.btns {
+	text-align: center;
+}
+
+.btn {
+	background-color: black;
+    font-size: 17px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    border: none;
+    letter-spacing: 4px;
+    /* border: 1px solid white; */
+    color: white;
+    cursor: pointer;
+    padding: 19px;
+    transition: all 0.5s ease;
+    outline: 0;
+    opacity: 0.2;
+}
+
+.btn:hover {
+	/*background-color: white;
+	color: black;*/
+	opacity: 1;
+}	
+
+.intro {
+    /* opacity: 1; */
+    font-size: 21px;
+    line-height: 1.5em;
+    letter-spacing: 1px;
+    color: white;
+    position: absolute;
+    text-align: left;
+    top: 25%;
+    left: 40%;
+    /* height: 30%; */
+    /* width: 35%; */
+    /* margin-right: 40px; */
+    font-family: 'Roboto';
+    font-weight: 400;
+    overflow-y: hidden;
+    width: 0%;
+    transition: all .4s;
+}
+
+#jon h2{
+	color: #d2d2d2;
+}
+
+#tyrion h2{
+	color: #c1272d;
+}
+
+#daenerys h2{
+	color: #4f8ae0;
+}
+
+#bran h2{
+	color: #e1ccff;
+}
+
+#cersei h2{
+	color: #b77e2c;
+}
+
+.img-rig{
+	width: 328px;
+    position: absolute;
+    top: 18%;
+    left: 8%;
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+#img-jon.img-rig, #img-tyrion.img-rig, #img-daenerys.img-rig, #img-bran.img-rig, #img-cersei.img-rig{
+	transform: scale(0);
+}
+
+.img-logo {
+	position: absolute;
+    width: 590px;
+    /* top: 20%; */
+    left: 26%;
+    transition: all 0.5s;
+    transform: scale(0);
+}
+
+.intro a{
+	text-decoration: none;
+	color: white;
+}
+
+.intro a:hover{
+	color:#8a8a8a;
+}
+
+.about-mark{
+	position: absolute;
+    width: 30px;
+    opacity: 0.3;
+    right: 0px;
+    margin: 20px 20px 20px 20px;
+    cursor: pointer;
+}
+
+.about-mark:hover{
+	opacity: 0.7;
+}
+
+.about-text{
+	font-size: 30px;
+    line-height: 1.5em;
+    letter-spacing: 1px;
+    color: white;
+    position: absolute;
+    text-align: center;
+    top: 35%;
+    left: 20%;
+    right: 20%;
+    /* margin-right: 40px; */
+    font-family: 'Roboto';
+    font-weight: 400;
+    /* overflow-y: hidden; */
+    opacity: 0;
+    transition: all .4s;
+    /* transform: scale(0); */
+}
+
+.about-text a{
+	text-decoration: none;
+	color: teal;
+	/*font-style: italic;*/
+}
+
+.about-text a:hover{
+	color:#8a8a8a;
+}
+
